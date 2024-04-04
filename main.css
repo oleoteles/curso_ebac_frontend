@@ -2,54 +2,73 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
-    padding: 16px 0;
-    color: #0a0a0a;
-    display: flex;
-    justify-content: center;
-}
-
-header button {
-    margin-left: 16px;
-}
-
-form {
-    padding: 24px 0;
-    text-align: center;
-}
-
-form h2 {
-    margin-bottom: 16px
-}
-
-input, button {
-    padding: 8px;
-    margin-left: 16px;
-}
-
-button {
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #0a0a0a;
+html {
+    overflow-x: hidden;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #ee790c;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: inherit;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-bottom: 16px;
+}
+
+header > .container {
+    justify-content: space-between;
     align-items: center;
-    padding: 24px;
-    font-size: 20px;
+    padding-bottom: 16px;
 }
 
-.riscarTarefa {
-    text-decoration: line-through;
-    cursor: pointer;
-}
-
-ul {
-    cursor: pointer;
+header {
+    background-color: #131211;
+    padding-top: 16px;
+    color: #fff;
 }
