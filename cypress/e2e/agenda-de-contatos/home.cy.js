@@ -10,6 +10,7 @@ describe('Testes para a home', () => {
         cy.get('input[type="email"]').type('leonardo.teles1704@gmail.com')
         cy.get('input[type="tel"]').type('81995679116')
         cy.get('.adicionar').click()
+        cy.wait(4000)
     })
 
     it("Deve editar um contato", () => {
@@ -17,6 +18,7 @@ describe('Testes para a home', () => {
         cy.get('input[type="text"]').clear()
         cy.get('input[type="text"]').type('Gian Souza')
         cy.get('.alterar').click()
+        cy.wait(4000)
     })
 
     it("Deve remover um contato da lista", () => {
